@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chongyou.Main2Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient2"
+        android:src="@drawable/bg_register_bottom" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/text5"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/ic_back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/text5"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/text5"
+                android:layout_toRightOf="@+id/text5"
+                android:text="注册"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:id="@+id/nickname"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_register_nickname"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="25dp"/>
+
+    <EditText
+        android:layout_marginTop="165dp"
+        android:layout_width="302dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/nickname"
+        android:hint="请输入昵称"
+        android:textSize="18dp"
+        android:id="@+id/editText" />
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_register_phone"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="25dp"
+    />
+    <EditText
+
+        android:layout_marginTop="215dp"
+        android:layout_width="302dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/phone"
+        android:hint=" 请输入手机号"/>
+    <ImageView
+        android:id="@+id/pwd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_register_pwd"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="25dp"
+        />
+    <EditText
+        android:layout_marginTop="265dp"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/pwd"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        />
+    <ImageView
+        android:id="@+id/gender"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_register_gender"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="320dp"
+        />
+    <TextView
+        android:layout_marginTop="320dp"
+        android:id="@+id/text4"
+        android:layout_width="302dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/gender"
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/text4"
+        android:layout_marginLeft="150dp"
+        >
+
+    </Spinner>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="380dp"
+        android:background="#FFF"
+        >
+        <Button
+            android:layout_width="305dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:text="注册"
+            android:textSize="25dp"
+            android:textColor="#FFF"
+            android:background="#ff5891e1"
+            />
+    </RelativeLayout>
+</RelativeLayout>
